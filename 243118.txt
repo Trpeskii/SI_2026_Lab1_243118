@@ -1,0 +1,47 @@
+13. git checkout -b feature-search-books Napravivme nov branch 
+git branch za da gi vidime branchovite
+go smenavme kodot
+git add SI2026Lab1Main.java 
+git commit -m "Implement book search" napraevme commit
+git push -u origin feature-search-books ovde go stadovme na github
+git checkout master \\ se vrativme vo master grankata
+git merge feature-search-books \\ ja mergnavme i koristevme Fast-Forward
+f3ec063 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement book search
+d340a1e (origin/master) Add starter code
+3ffd475 Initial commit
+
+22. 
+Da nastana konflikt pomegju master i feature-borrow-book. Konfliktot go resiv racno so
+otvoranje na fileot, gi izbrisat Git oznakite za konflit i odluciv koja promena 
+kje ja ostavam od dvete granki za da funkcionira kodot ispravno. Potoa napraviv 
+git add za da go dodadam fileot i gi spoiv so git commit vo koj napisav deka e resen
+konflikt pomegju 2te granki. Strategijata bese recursive merge strategy. I so git 
+log --oneline --graph --all vidov deka e resen konfliktot.
+
+23. Mi izleze Vim editor, so shto moze da se zakluci deka spojuvanjeto ne bese 
+fast-forward, tuku bese recursive. Bidejki rabotev na feature-genre-report,
+no voedno napraviv izmeni i vo master. Grankite se razdelija i git morase da gi
+spoi so nov merge commit. 
+
+C:\Users\Aleksandar\SI_2026_Lab1_243118>git log --oneline --graph --all
+*   4516368 (HEAD -> master, origin/master) Merge branch 'feature-genre-report'
+|\
+| * 1f4d26c (origin/feature-genre-report, feature-genre-report) Implement genre report
+| | *   a25bb6b (feature-borrow-book) Resolved merge confilct and merged master into feature-borrow-book
+| | |\
+| |_|/
+|/| |
+* | | 8fd4564 Update borrow message on master
+|/ /
+| * 438f7e9 (origin/feature-borrow-book) Implement borrow book
+|/
+* f3ec063 (origin/feature-search-books, feature-search-books) Implement book search
+* d340a1e Add starter code
+* 3ffd475 Initial commit
+
+
+24. Imase konflikt deka vo master go imav kodot od genre-report no vo feature-borrow
+go nemav pa imase konflikt vo mainot kade sto gi spoiv racno  edna po druga liniite. Strategijata
+koja ja koristev bese Recursive koja zavrsi so merge commit.
+
+

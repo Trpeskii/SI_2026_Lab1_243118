@@ -1,0 +1,16 @@
+*   35fe81a Integrated genre report and borrow book tests
+|\  
+| *   a25bb6b Resolved merge confilct and merged master into feature-borrow-book
+| |\  
+| * | 438f7e9 Implement borrow book
+* | |   4516368 Merge branch 'feature-genre-report'
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 1f4d26c Implement genre report
+| |/  
+* / 8fd4564 Update borrow message on master
+|/  
+* f3ec063 Implement book search
+* d340a1e Add starter code
+* 3ffd475 Initial commit
